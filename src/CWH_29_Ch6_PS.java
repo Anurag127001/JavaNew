@@ -45,7 +45,7 @@ public class CWH_29_Ch6_PS {
 
         // Question 6
 
-        int [] array = {5, 4, 8, 2, 1, 3};
+      /*  int [] array = {5, 4, 8, 2, 1, 3};
         int i = 0;
         for(int numbers:array){
             if(numbers>i){
@@ -55,11 +55,11 @@ public class CWH_29_Ch6_PS {
         System.out.printf("%d is the greatest element in given array.", i);
         System.out.println("");
 
-
+*/
 
         // Question 6
 
-        int [] array2 = {5, 4, 8, 2, 1, 3};
+  /*      int [] array2 = {5, 4, 8, 2, 1, 3};
         int j = 0;
         for(int element:array2){
             if(element<j){
@@ -67,6 +67,37 @@ public class CWH_29_Ch6_PS {
             }
         }
         System.out.printf("%d is the smallest element in given array.", j);
+    */
+
+
+        //Question 4
+        int [][] mat1 = {{1,2,3},
+                {4,5,6}};
+        int [][] mat2 = {{2,6,13},
+                {3,6,1}};
+        int [][] result = {{0,0,0},
+                {0,0,0}};
+        for (int i=0; i<mat1.length;i++){   //row number of times
+            for (int j =0; j<mat1[i].length;j++){   //column number of times
+                System.out.printf("Setting value for i=%d and j=%d\n", i, j);
+                result[i][j] =mat1[i][j] + mat2[i][j];
+
+            }
+            System.out.println("");
+        }
+
+        // Printing the elements of a 2-D Array
+        for (int i=0; i<mat1.length;i++){   //row number of times
+            for (int j =0; j<mat1[i].length;j++){   //column number of times
+                System.out.print(result[i][j]+ " ");
+                result[i][j] =mat1[i][j] + mat2[i][j];
+
+            }
+            System.out.println("");
+        }
+
+
+
 
 
 
