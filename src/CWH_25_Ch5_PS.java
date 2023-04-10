@@ -37,13 +37,16 @@ public class CWH_25_Ch5_PS {
 //        Question 6
 
 //        4*3*2*1
-        int n = 4;
-        do {
-            n = n * (n - 1);
+//        n * n-1 * n-2 * ... 1
+        int n = 5;
+        int i = 1;
+        int factorial = 1;
+        while (i<=n){
+            factorial = factorial * i ;
+            i++;
 
-        }while (n<=1);
-            System.out.println(n);
-
+        }
+        System.out.println(factorial);
 
 
 
