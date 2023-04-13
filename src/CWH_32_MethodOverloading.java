@@ -38,7 +38,7 @@ public class CWH_32_MethodOverloading {
 
      //Method overloading
      foo();
-     foo(3000, "RDJ");
+     foo(3000, "RDJ ");
 
 
 
